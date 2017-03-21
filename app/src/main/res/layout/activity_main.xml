@@ -26,16 +26,6 @@
             android:id="@+id/editName"
             android:hint="email" />
 
-        <Switch
-            android:text="Shuffle   "
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/editName"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:id="@+id/switchShuffle"
-            android:checked="false" />
-
         <Button
             android:text="save"
             android:layout_width="wrap_content"
@@ -54,13 +44,24 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true" />
 
+        <Switch
+            android:text="Shuffle   "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switchShuffle"
+            android:checked="false"
+            android:layout_below="@+id/editName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:switchTextAppearance="@style/TextAppearance.AppCompat.Widget.Switch" />
+
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/layout2"
-        android:visibility="visible"
+        android:visibility="gone"
         android:background="#ffffff">
 
         <TextView
